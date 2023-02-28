@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+        <link rel="stylesheet" href="fazer_pedido.css">
+
+        
+       
+
+        <title>Realizar solicitação - Connect Vida</title>
+        <link rel="icon" type="image/x-icon" href="connectVidaLogo-removebg-preview.ico">
+
+    </head>
+    <body>
+
+        
+           
+                <!--=============== NAV ===============-->
+
+                <div class="nav" id="nav">
+                    <nav class="nav__content">
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class='bx bx-chevron-right' ></i>
+                        </div>
+                
+                        <a href="Connect_vida.php" class="nav__logo">
+                            <i class='fas fa-tint' ></i>
+                            <span class="nav__logo-name">Connect Vida</span>
+                               
+                        </a>
+                        <div class="nav__list">
+                            <a href="Connect_vida.php" class="nav__link active-link">
+                                <i class='fas fa-home'></i>
+                                <span class="nav__name">Início</span>
+                            </a>
+                
+                            <a href="perfil.php" class="nav__link">
+                                <i class='far fa-address-book'></i>
+                                <span class="nav_name">Perfil</span>
+                            </a>
+                
+                
+                            <a href="fazer_pedido.html" class="nav__link">
+                                 <i class='bx bx-plus-medical'></i>
+                                <span class="nav__name">Criar pedido</span>
+                            </a>
+                
+                            <a href="contato.html" class="nav__link">
+                                <i class='fas fa-question-circle' ></i>
+                                <span class="nav__name">Sobre</span>
+                            </a>
+                            <a href="Pedidos_aceitos.html" class="nav__link">
+                                <i class='fas fa-cart-arrow-down' ></i>
+                                <span class="nav__name">Pedidos Aceitos</span>
+                            </a>
+                           <a href="sair.php" class="nav__link">
+                                <i class='bx bxs-log-out'></i>
+                                <span class="nav__name"><b>SAIR</b></span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            
+                  
+            
+                    <!--=============== MAIN JS ===============-->
+                    <script src="index.js"></script>
+            <br>
+            <br>
+                    <div class="main">
+                      <div class="header">
+                        <h2>Bem-Vindo(a), faça sua Solicitação!</h2>
+                      </div>
+                                 <div class="container-ballonn">
+                                  <div class="header-balloonn">
+                                      <p>Enviar solicitação</p>
+                                  </div>
+                                  <div class="dados">
+                                      <div class="dados-left">
+                                        <div class="divisao">
+                                            <figure class="image is-128x128">
+                                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                                              </figure>
+                                          <div class="input-group">
+                                          <form action="fazer_pedido.php" method="post">
+                                          <p>Nome:</p>
+                                          <input disabled type="text" name="nome" id="nome">
+                                          </div>
+                                          <div class="input-group">
+                                           <p> <label for="hemocentro">Hemocentro</label></p>
+                                            <select name="local" id="hemocentro">
+                                                <option value="hemope">HEMOPE</option>
+                                                <option value="ihene">IHENE</option>
+                                                <option value="hemato">HEMATO</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="divisao">
+                                          <div class="input-group">
+                                          <p>Tipo Sanguineo:</p>
+                                          <input disabled type="text" name="tipo_sang" id="tipo_sang">
+                                          </div>
+                                          <div class="input-group">
+                                            <p><label for="genero">Gênero:</label></p>
+                                            <input id="genero" type="text" name="genero" disabled><br>
+                                          </div>
+                                          <div class="input-group">
+                                            <p><label for="idade">Idade:</label></p>
+                                            <input id="idade" type="text" name="idade" disabled><br>
+                                          </div>
+                                        </div>  
+                                      </div>
+                                      <div class="dados-right">
+                                          <textarea  name="descricao" id="textarea" cols="60" rows="10"></textarea>
+                                      </div>
+                                  </div>
+                                  <div class="footer-balloonn">
+                                    <a href="fazer_pedido.php" class="aceitar" name="submit" id="submit" type="submit">Enviar</a>
+                                     <!-- <a href="#">Sair</a>-->
+                                  </div>
+                                  </div>
+                                </form>
+                                </div>
+
+    </body>
+</html>
